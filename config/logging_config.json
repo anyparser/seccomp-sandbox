@@ -1,0 +1,10 @@
+{
+    "log_level": "INFO",
+    "log_file": "/var/log/seccomp-sandbox/seccomp.log",
+    "log_to_stderr": true,
+    "log_format": {
+        "include_timestamp": true,
+        "include_pid": true,
+        "include_level": true
+    }
+} 

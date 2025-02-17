@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  seccomp-sandbox:
+    build:
+      context: .
+      args:
+        PWD: ${PWD}
+    stop_grace_period: 1s
+    volumes:
+      - .:${PWD}
+      - ./.tempfs2:${PWD}/.tempfs2
+    tty: true
+    stdin_open: true
+    cap_add:
+      - SYS_ADMIN

@@ -1,0 +1,18 @@
+{
+    "allowed_dirs": [
+        {
+            "path": "/.tempfs2",
+            "access": "both",
+            "allow_subdirs": true
+        },
+        {
+            "path": "/tmp",
+            "access": "both",
+            "allow_subdirs": true
+        }
+    ],
+    "file_operations": {
+        "allow_symlinks": false,
+        "require_absolute_paths": true
+    }
+} 

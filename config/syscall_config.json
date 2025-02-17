@@ -1,0 +1,19 @@
+{
+    "default_action": "allow",
+    "blocked_syscalls": [
+        "mount",
+        "umount2",
+        "ptrace",
+        "pivot_root",
+        "chroot",
+        "open_by_handle_at"
+    ],
+    "process_control": {
+        "allow_child_processes": true,
+        "inherit_restrictions": true
+    },
+    "file_operations": {
+        "require_absolute_paths": true,
+        "allow_symlinks": false
+    }
+} 
